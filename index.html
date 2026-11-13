@@ -8,6 +8,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
 
 		<!-- Bootstrap -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -22,7 +24,329 @@
 	</head>
 	<body>
 
-		<h1>Hello world</h1>
+		<!-- Navbar section -->
+		<nav>
+			<div class="logo">
+				<h1>Divine KC <i class="bi bi-shop"></i></h1>
+			</div>
+			<div class="navbar">
+				<ul>
+					<li><a href="#hero">Home</a></li>
+					<li><a href="#product">Shop</a></li>
+					<li>About</li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			<div class="search d-md-none d-lg-block">
+				<ul>
+					<li><i class="bi bi-search"></i></li>
+					<li><i class="bi bi-cart"></i></li>
+					<li><i class="bi bi-person"></i></li>
+				</ul>
+			</div>
+		</nav>
+
+
+
+
+
+
+
+
+
+
+		<!-- Hero section -->
+		<section id="hero" class="hero-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="inner-hero">
+							<h1 class="hero-text-1">Redefine Your Wardrobe Everyday</h1>
+							<p class="hero-text-2">Explore hand-picked apparel crafted for comfort, confidence, and effortless street-smart style.</p>
+							<div class="hero-button">
+								<button class="hero-btn-1" onclick="window.location.href='#product'">SHOP COLLECTION</button>
+								<button class="hero-btn-2" onclick="window.location.href='#product'">EXPLORE TRENDS</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Hero section -->
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Product Section -->
+		<div class="container d-none d-lg-block d-md-block" id="product">
+			<h1 class="text-center p-5">Featured Products</h1>
+			<div class="row">
+				<div class="col-12 col-lg-3 col-md-4">
+					<div class="product-box">
+						<img class="product-image" src="./images/jacket.jpg">
+						<h5 class="product-text">Zip Hoodie</h5>
+						<p>$120.00</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 col-md-4">
+					<div class="product-box">
+						<img class="product-image" src="./images/short1.jpg">
+						<h5 class="product-text">Cargo/Utility Shorts</h5>
+						<p>$80.00</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 col-md-4">
+					<div class="product-box">
+						<img class="product-image" src="./images/sweater.jpg">
+						<h5 class="product-text">Crewneck Sweater</h5>
+						<p>$100.00</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 col-md-4">
+					<div class="product-box">
+						<img class="product-image" src="./images/short2.jpg">
+						<h5 class="product-text">Summer shorts</h5>
+						<p>$90.00</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 col-md-4">
+					<div class="product-box">
+						<img class="product-image" src="./images/jeans1.jpg">
+						<h5 class="product-text">Blue Denim Jeans</h5>
+						<p>$100.00</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 col-md-4">
+					<div class="product-box">
+						<img class="product-image" src="./images/t-shirt1.jpg">
+						<h5 class="product-text">Green Graphic Tee</h5>
+						<p>$40.00</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 col-md-4">
+					<div class="product-box">
+						<img class="product-image" src="./images/jeans2.jpg">
+						<h5 class="product-text">Charcoal Jeans</h5>
+						<p>$90.00</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 col-md-4">
+					<div class="product-box">
+						<img class="product-image" src="./images/t-shirt2.jpg">
+						<h5 class="product-text">Blue Graphic Tee</h5>
+						<p>$45.00</p>
+					</div>
+				</div>
+			</div>
+			<button class="view-more">View More <i class="bi bi-arrow-right"></i></button>
+		</div>
+		<!-- Product Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Product Section Carousel -->
+			<div class="container d-lg-none d-md-none d-sm-block" id="product-mobile">
+			    <h1 class="text-center p-5">Featured Products</h1>
+			    
+			    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+			        <div class="carousel-inner">
+			            
+			            <div class="carousel-item active">
+			                <div class="product-box">
+			                    <img class="product-image" src="./images/jacket.jpg" alt="Zip Hoodie">
+			                    <h5 class="product-text">Zip Hoodie</h5>
+			                    <p>$120.00</p>
+			                </div>
+			            </div>
+
+			            <div class="carousel-item">
+			                <div class="product-box">
+			                    <img class="product-image" src="./images/short1.jpg" alt="Cargo Shorts">
+			                    <h5 class="product-text">Cargo/Utility Shorts</h5>
+			                    <p>$80.00</p>
+			                </div>
+			            </div>
+
+			            <div class="carousel-item">
+			                <div class="product-box">
+			                    <img class="product-image" src="./images/sweater.jpg" alt="Crewneck Sweater">
+			                    <h5 class="product-text">Crewneck Sweater</h5>
+			                    <p>$100.00</p>
+			                </div>
+			            </div>
+
+			            <div class="carousel-item">
+			                <div class="product-box">
+			                    <img class="product-image" src="./images/short2.jpg" alt="Summer shorts">
+			                    <h5 class="product-text">Summer shorts</h5>
+			                    <p>$90.00</p>
+			                </div>
+			            </div>
+
+			            <div class="carousel-item">
+			                <div class="product-box">
+			                    <img class="product-image" src="./images/jeans1.jpg" alt="Blue Denim Jeans">
+			                    <h5 class="product-text">Blue Denim Jeans</h5>
+			                    <p>$100.00</p>
+			                </div>
+			            </div>
+
+			            <div class="carousel-item">
+			                <div class="product-box">
+			                    <img class="product-image" src="./images/t-shirt1.jpg" alt="Green Graphic Tee">
+			                    <h5 class="product-text">Green Graphic Tee</h5>
+			                    <p>$40.00</p>
+			                </div>
+			            </div>
+
+			            <div class="carousel-item">
+			                <div class="product-box">
+			                    <img class="product-image" src="./images/jeans2.jpg" alt="Charcoal Jeans">
+			                    <h5 class="product-text">Charcoal Jeans</h5>
+			                    <p>$90.00</p>
+			                </div>
+			            </div>
+
+			            <div class="carousel-item">
+			                <div class="product-box">
+			                    <img class="product-image" src="./images/t-shirt2.jpg" alt="Blue Graphic Tee">
+			                    <h5 class="product-text">Blue Graphic Tee</h5>
+			                    <p>$45.00</p>
+			                </div>
+			            </div>
+
+			        </div>
+
+			        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+			            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+			            <span class="visually-hidden">Previous</span>
+			        </button>
+			        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+			            <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+			            <span class="visually-hidden">Next</span>
+			        </button>
+			    </div>
+
+			    <div class="text-center mt-3">
+			        <button class="view-more">View More <i class="bi bi-arrow-right"></i></button>
+			    </div>
+			</div>
+		<!-- Product Section Carousel -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Contact Section -->
+		<div class="container" id="contact">
+			<h1 class="text-center p-5">Contact Us</h1>
+			<div class="row">
+				<div class="col-12" id="contact-column">
+					<div class="contact-box">
+						<div class="inner-contact">
+							<h2>Get it Touch</h2>
+							<p><i class="bi bi-envelope-fill"></i> sample@email.com</p>
+							<p><i class="bi bi-telephone-fill"></i> +63 900 000 0000</p>
+							<p><i class="bi bi-geo-alt-fill"></i> Address: Sample, Sample 9024</p>
+						</div>
+						<div class="inner-contact">
+							<input class="contact-input" type="text" name="" placeholder="Name">
+							<input class="contact-input" type="text" name="" placeholder="Email">
+							<textarea class="contact-textarea" placeholder="Message"></textarea>
+							<button class="contact-button">Send</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Contact Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Footer Section -->
+		<div class="footer-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 col-md-3 col-lg-3">
+						<h3>Divine KC <i class="bi bi-shop"></i></h3>
+						<p>Nature-inspired apparel for modern explorers</p>
+						<div class="inner-footer">
+							<i class="bi bi-instagram"></i>
+							<i class="bi bi-facebook"></i>
+							<i class="bi bi-pinterest"></i>
+							<i class="bi bi-linkedin"></i>
+						</div>
+					</div>
+					<div class="col-6 col-md-3 col-lg-3">
+						<h4>Shop</h4>
+						<p>New Arrivals</p>
+						<p>Hoodies & Sweatshirts</p>
+						<p>T-shirts</p>
+						<p>Jeans & Denim</p>
+						<p>Summer Shorts</p>
+						<p>Gift Cords</p>
+					</div>
+					<div class="col-6 col-md-3 col-lg-3">
+						<h4>Company</h4>
+						<p>About Us</p>
+						<p>Our Story</p>
+						<p>Sustainability</p>
+						<p>Careers</p>
+						<p>Contact Us</p>
+						<p>Blog</p>
+					</div>
+					<div class="col-6 col-md-3 col-lg-3">
+						<h4>Support</h4>
+						<p>FAQ</p>
+						<p>Shipping & Returns</p>
+						<p>Size Guide</p>
+						<p>Privacy Policy</p>
+						<p>Terms of Services</p>
+						<p>Track Order</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer Section -->
 
 
 
