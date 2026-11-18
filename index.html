@@ -42,10 +42,11 @@
 			  	<!-- Nav Links -->
 			 	<div class="navbar-links mx-auto">
 			    	<ul class="navbar-nav gap-3 gap-lg-4 text-center">
-			      	<li class="nav-item"><a class="nav-link text-dark" href="#hero">Home</a></li>
-			      	<li class="nav-item"><a class="nav-link text-dark" href="#product">Shop</a></li>
-			      	<li class="nav-item"><a class="nav-link text-dark" href="#about">About</a></li>
-			      	<li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
+				      	<li class="nav-item"><a class="nav-link text-dark" href="#hero">Home</a></li>
+				      	<li class="nav-item d-none d-lg-block"><a class="nav-link text-dark" href="#product">Shop</a></li>
+				      	<li class="nav-item d-block d-lg-none"><a class="nav-link text-dark" href="#product-mobile">Shop</a></li>
+				      	<li class="nav-item"><a class="nav-link text-dark" href="#about">About</a></li>
+				      	<li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
 			    	</ul>
 			  	</div>
 
@@ -79,8 +80,10 @@
 							<h1 class="hero-text-1">Redefine Your Wardrobe Everyday</h1>
 							<p class="hero-text-2">Explore hand-picked apparel crafted for comfort, confidence, and effortless street-smart style.</p>
 							<div class="hero-button">
-								<button class="hero-btn-1" onclick="window.location.href='#product'">SHOP COLLECTION</button>
-								<button class="hero-btn-2" onclick="window.location.href='#product'">EXPLORE TRENDS</button>
+								<button class="hero-btn-1 d-none d-lg-block" onclick="window.location.href='#product'">SHOP COLLECTION</button>
+								<button class="hero-btn-1 d-block d-lg-none" onclick="window.location.href='#product-mobile'">SHOP COLLECTION</button>
+								<button class="hero-btn-2 d-none d-lg-block" onclick="window.location.href='#product'">EXPLORE TRENDS</button>
+								<button class="hero-btn-2 d-block d-lg-none" onclick="window.location.href='#product-mobile'">EXPLORE TRENDS</button>
 							</div>
 						</div>
 					</div>
