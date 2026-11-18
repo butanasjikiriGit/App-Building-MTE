@@ -25,24 +25,39 @@
 	<body>
 
 		<!-- Navbar section -->
-		<nav>
-			<div class="logo">
-				<h1>Divine KC <i class="bi bi-shop"></i></h1>
-			</div>
-			<div class="navbar">
-				<ul>
-					<li><a href="#hero">Home</a></li>
-					<li><a href="#product">Shop</a></li>
-					<li>About</li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-			<div class="search d-md-none d-lg-block">
-				<ul>
-					<li><i class="bi bi-search"></i></li>
-					<li><i class="bi bi-cart"></i></li>
-					<li><i class="bi bi-person"></i></li>
-				</ul>
+		<nav class="navbar navbar-expand-lg border-bottom px-3 px-lg-5 sticky-top custom-nav">
+			<div class="container-fluid p-0">
+				<!-- Brand / Logo -->
+				<div class="logo">
+			  	<h1 class="h3 mb-0 me-2">Divine KC <i class="bi bi-shop"></i></h1>
+				</div>
+
+				<!-- Toggle Button for Mobile -->
+				<button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+			  	<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Collapsible Wrapper -->
+				<div class="collapse navbar-collapse justify-content-between mt-3 mt-lg-0" id="navMenu">
+			  	<!-- Nav Links -->
+			 	<div class="navbar-links mx-auto">
+			    	<ul class="navbar-nav gap-3 gap-lg-4 text-center">
+			      	<li class="nav-item"><a class="nav-link text-dark" href="#hero">Home</a></li>
+			      	<li class="nav-item"><a class="nav-link text-dark" href="#product">Shop</a></li>
+			      	<li class="nav-item"><a class="nav-link text-dark" href="#about">About</a></li>
+			      	<li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
+			    	</ul>
+			  	</div>
+
+			  	<!-- Action Icons -->
+			  	<div class="search">
+			    	<ul class="navbar-nav flex-row justify-content-center gap-4">
+			      	<li class="nav-item"><a href="#" class="text-dark"><i class="bi bi-search"></i></a></li>
+			      	<li class="nav-item"><a href="#" class="text-dark"><i class="bi bi-cart"></i></a></li>
+			      	<li class="nav-item"><a href="#" class="text-dark"><i class="bi bi-person"></i></a></li>
+			    	</ul>
+			  	</div>
+				</div>
 			</div>
 		</nav>
 
